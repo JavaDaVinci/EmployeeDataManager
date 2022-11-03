@@ -15,9 +15,6 @@ public class Data {
 
     ArrayList<String> arr = new ArrayList<String>(); //Container for Days.
 
-    public Data(){
-
-    }
 
     public void setDays() {
         Scanner scanner = new Scanner(System.in);
@@ -55,7 +52,7 @@ public class Data {
     //Generates ID
     private int setID() {
         Random random = new Random();
-        int x = random.nextInt(0,1000000);
+        int x = random.nextInt(1000000);
         this.workerID=x;
       return workerID;
     }
